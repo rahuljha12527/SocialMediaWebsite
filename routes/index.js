@@ -6,6 +6,10 @@ const router=express.Router();
 console.log('router loaded');
 
 router.get('/',homeController.home);
-// router.get('/home',homeController.car);
+
+router.use('/users',require('./users'));
+
+router.use('/carsR',require('./cars'));
+
 
 module.exports=router;
