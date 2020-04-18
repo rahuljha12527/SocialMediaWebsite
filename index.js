@@ -3,6 +3,11 @@ const express=require('express');
 const app=express();
 
 const port=8000;
+//use express router
+app.use('/',require('./routes'));
+
+const car=require('./controllers/home_controller');
+
 
 app.listen(port,function(err){
     if(err){
