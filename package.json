@@ -10,9 +10,12 @@
   "author": "rahuljha",
   "license": "ISC",
   "dependencies": {
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "mongoose": "^5.9.10"
+    "mongoose": "^5.9.10",
+    "parser": "^0.1.4"
   }
 }
