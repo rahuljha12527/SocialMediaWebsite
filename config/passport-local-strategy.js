@@ -34,7 +34,7 @@ passport.serializeUser(function(user,done){
 
 
 // desirializing the user from the cookies
-passport.deserializeUser(function(err,user){
+passport.deserializeUser(function(id,done){
       User.findById(id,function(err,user){
           if(err){
               console.log('Error in finding user--> Passport');
