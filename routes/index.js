@@ -13,6 +13,8 @@ router.use('/carsR',require('./cars'));
 
 router.use('/posts',require('./posts'));
 
+router.use('/comments',require('./comments'));
+
 
 
 
