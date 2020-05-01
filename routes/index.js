@@ -11,6 +11,8 @@ router.use('/users',require('./users'));
 
 router.use('/carsR',require('./cars'));
 
+router.use('/posts',require('./posts'));
+
 
 
 
