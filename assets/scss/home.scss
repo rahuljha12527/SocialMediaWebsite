@@ -3,12 +3,13 @@
     #feed-posts{
         width: 70%;
         padding: 10px;
+        border-right: 1px solid lightgrey;
+        height: 100vh;
     }
 
     #user_friends{
         width: 30%;
         padding: 10px;
-        border-left: 1px solid lightgrey;
-        height: 100%;
+        
     }
 }
