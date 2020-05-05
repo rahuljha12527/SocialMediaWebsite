@@ -19,6 +19,7 @@ module.exports.update=function(req,res){
                 return res.redirect('back');
             })
     }else{
+        req.flash('error','Unauthorized!');
         return res.redirect(401).send('Unauthorized');
     }
 }
@@ -51,24 +52,27 @@ module.exports.signIn=function(req,res){
 module.exports.create=function(req,res){
   
     if(req.body.password!=req.body.confirm_password){
-           return res.redirect('back');       
+        req.flash('error','Password did not match');
+        return res.redirect('back');       
     }
 
     User.findOne({email: req.body.email},function(err,user){
         if(err){
-            console.log('error in finding user in sigining up');
+            req.flash('error',err);
+            // console.log('error in finding user in sigining up');
             return;
         }
 
         if(!user){
             User.create(req.body,function(err,user){
                 if(err){
-                    console.log('error in creating user while sigining up');
+                    req.flash('error',err);
                     return;
                 }
                 return res.redirect('/users/sign-in');
             })
         }else{
+            req.flash('success','You haved signed up,login to continue');
             return res.redirect('back');
         }
 
