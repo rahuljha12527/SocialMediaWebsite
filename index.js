@@ -4,9 +4,9 @@ const cookieParser=require('cookie-parser');
 
 const app=express();
 
-const port=8000;
+const port=process.env.PORT;
 const expressLayouts=require('express-ejs-layouts');
-
+console.log(process.env.myvar)
 const db=require('./config/mongoose');
 
 //  use for session cookie
