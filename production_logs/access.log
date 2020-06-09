@@ -1,0 +1,3 @@
+::1 - - [09/Jun/2020:18:23:36 +0000] "GET / HTTP/1.1" 200 24355 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [09/Jun/2020:18:24:38 +0000] "GET /users/profile/5ea04aaa171a0820b4409ed9 HTTP/1.1" 200 1959 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
+::1 - - [09/Jun/2020:18:25:25 +0000] "POST /likes/toggle/?id=5eb27cd9d15dc34744706a07&type=Post HTTP/1.1" 200 58 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
