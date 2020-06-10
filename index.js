@@ -2,9 +2,12 @@ const express=require('express');
 const env=require('./config/environment');
 const logger=require('morgan');
 
+
 const cookieParser=require('cookie-parser'); 
 
 const app=express();
+require('./config/view-helpers')(app);
+
 
 const port=process.env.PORT;
 const expressLayouts=require('express-ejs-layouts');
