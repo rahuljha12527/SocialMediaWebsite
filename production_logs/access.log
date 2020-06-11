@@ -428,3 +428,8 @@
 [0mGET / [32m200[0m 103.237 ms - 24557[0m
 [0mGET /users/profile/5edfcb3a97feca1f5018e773 [32m200[0m 24.771 ms - 2374[0m
 [0mGET /users/profile/css/user_profile.css [33m404[0m 16.444 ms - 173[0m
+[0mGET / [32m200[0m 255.889 ms - 24352[0m
+[0mGET /favicon.ico [33m404[0m 18.584 ms - 150[0m
+[0mGET /users/profile/5edfcb3a97feca1f5018e773 [36m304[0m 29.037 ms - -[0m
+[0mGET /users/profile/css/user_profile.css [33m404[0m 85.087 ms - 173[0m
+[0mGET /users/profile/5edfcb3a97feca1f5018e773 [32m200[0m 19.539 ms - 2375[0m
