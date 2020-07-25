@@ -1,7 +1,8 @@
 const express=require('express');
 const env=require('./config/environment');
 const logger=require('morgan');
-
+const dotenv = require('dotenv').config();
+const port=8000;
 
 const cookieParser=require('cookie-parser'); 
 
@@ -65,6 +66,7 @@ app.use(logger(env.morgan.mode,env.morgan.options));
 
 app.use(expressLayouts);
 // extract style and scripts from subpages into the layout
+// sorry but mujhe error nhi mil raha escalating your doubt okaybut 
 app.set('layout extractStyles',true);
 app.set('layout extractScripts',true);
 
